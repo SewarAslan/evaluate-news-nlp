@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>News Sentiment Analyzer</title>
+</head>
+
+<body>
+
+    <header>
+        News Sentiment Analyzer
+    </header>
+
+    <main>
+        <section>
+            <form onsubmit="return Client.handleSubmit(event)">
+                <label for="article-url">Enter Article URL:</label>
+                <input id="article-url" type="text" name="url" required>
+
+                <button type="submit">Analyze</button>
+            </form>
+        </section>
+
+        <section>
+            <strong>Form Results:</strong>
+            <div id="results"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Powered by NLP API - Udacity</p>
+    </footer>
+
+</body>
+</html>
